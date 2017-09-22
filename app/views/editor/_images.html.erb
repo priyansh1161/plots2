@@ -17,7 +17,6 @@
           <td><%= image_tag image.photo.url(:thumb), :class => "img-rounded" %></td>
           <td><%= image.photo_file_name %></td>
           <td><%= time_ago_in_words(image.created_at) %> ago</td>
-          <td><a class="btn" id="img_<%= image.id %>">Use as main</a></td>
           <script>
             $('#img_<%= image.id %>').bind('click',function(e) {
               alert('Not yet implemented.')
